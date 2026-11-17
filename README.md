@@ -2,7 +2,7 @@
 
 Personal site for Melvin Ani, an account manager in cybersecurity sales at FEITIAN Technologies. He sells MFA and FIDO2 hardware on direct and channel deals, and he also does technical discovery and customer success work. The site lists his location as Fremont, CA.
 
-Page copy is limited to his resumes. The Resume button downloads the cybersecurity account executive PDF in `public/Melvin_Ani_Resume.pdf`. The site does not publish a phone number or street address.
+Page copy is limited to his resumes. The Resume button downloads `public/Melvin_Ani_Resume.pdf`. That file lists Fremont, CA and does not include a phone number or street address.
 
 This is a [Create React App](https://create-react-app.dev/) project, the same stack as [sydneyani/My-Portfolio](https://github.com/sydneyani/My-Portfolio). It is a single page with in-page links. `homepage` is set to `.` so asset paths stay relative. That lets one build run at a host root (Render) or under a GitHub Pages project path.
 
