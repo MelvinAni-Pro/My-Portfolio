@@ -8,7 +8,7 @@ This is a [Create React App](https://create-react-app.dev/) project, the same st
 
 ## Prerequisites
 
-- Node.js 18 or 20
+- Node.js 20 or 22
 - npm
 
 ## Install
@@ -52,7 +52,7 @@ Render serves `build/` from the site root. No extra base path is required.
 
 ## Deploy on GitHub Pages
 
-This repo includes `.github/workflows/pages.yml`. The workflow installs dependencies, runs `npm run build`, and deploys `build/` with GitHub Actions.
+This repo includes `.github/workflows/pages.yml`. The workflow uses Node 22, runs `npm ci`, builds with `npm run build`, and deploys `build/` with GitHub Actions. The build step sets `CI=false` so ESLint warnings do not fail the Pages deploy. `typescript` is pinned to 4.9.5 so `npm ci` accepts the lockfile on the npm versions shipped with Node 20 and 22.
 
 Enable Pages once:
 
